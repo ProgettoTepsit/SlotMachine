@@ -35,7 +35,21 @@ body{
 }
 
 #preHome{
-    background-image: url("");
- 
-   
+    background-image: url("back.gif");
+    background-color: #BBECF5;
+    background-size: contain;
+    background-position: center;
+}
+button{
+    margin-left: 44%;
+    margin-top: 42%;
+    background-color: rgb(60, 0, 255);
+	font-size: 80px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+    width: 400px;
+    height: 200px;
+    
 }
