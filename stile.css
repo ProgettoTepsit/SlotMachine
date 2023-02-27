@@ -25,3 +25,8 @@ img {
 	border-radius: 4px;
 	cursor: pointer;
 }
+body{
+        background-image: url("back.jpg");
+        background-repeat: no-repeat; 
+        background-size: 1920px 1080px;
+}
