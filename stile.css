@@ -28,5 +28,17 @@ img {
 body{
         background-image: url("back.jpg");
         background-repeat: no-repeat; 
-        background-size: 1920px 1080px;
+        background-size: cover;
+        height: 100vh;
+        padding:0;
+        margin:0;
+}
+
+#preHome{
+    background-image: url("NaiG.gif");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
