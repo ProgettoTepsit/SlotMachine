@@ -50,15 +50,15 @@ h1{
 
 }
 button{
-    margin-left: 42%;
-    margin-top:  35%;
+    margin-left: 43%;
+    margin-top:  33%;
     background-color: rgb(60, 0, 255);
 	font-size: 80px;
 	color: white;
 	border: none;
 	border-radius: 30px;
 	cursor: pointer;
-    width: 300px;
+    width: 280px;
     height: 150px;
 	font-family: 'Tilt Warp', cursive;
 	opacity: 85% ;
