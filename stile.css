@@ -39,7 +39,7 @@ h1{
 	font-family: 'Tilt Warp', cursive;
 	color:#F6058B;
 	text-align: center;
-	font-size: 60px;
+	font-size: 100px;
 }
 
 #preHome{
@@ -53,7 +53,7 @@ h1{
 
 #mioBottone{
 	position: fixed;
-	bottom: 0;
+	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
     background-color:#F6058B;
