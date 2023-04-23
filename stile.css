@@ -49,17 +49,20 @@ h1{
     background-position: center;
 
 }
-button{
-    margin-left: 42%;
-    margin-top:  35%;
-    background-color: rgb(60, 0, 255);
-	font-size: 80px;
+
+
+#mioBottone{
+	align-items: center;
+    margin-left: 45%;
+    margin-top:  40%;
+    background-color:#F6058B;
+	font-size: 60px;
 	color: white;
 	border: none;
-	border-radius: 30px;
+	border-radius: 20px;
 	cursor: pointer;
-    width: px;
-    height: 150px;
+    width: 250px;
+    height: 110px;
 	font-family: 'Tilt Warp', cursive;
 	opacity: 85% ;
     
