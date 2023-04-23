@@ -9,10 +9,14 @@ function spin() {
 	var random2 = Math.floor(Math.random() * images.length);
 	var random3 = Math.floor(Math.random() * images.length);
 	reel1.src = images[random1];
-	reel2.src = images[random2];
+	reel2.src = images[random2]; 
 	reel3.src = images[random3];
 	
 	if (random1 === random2 && random2 === random3) {
 		alert("You won!");
 	}
+}
+
+function game(){
+	window.location.href = "4444444444.html";
 }
