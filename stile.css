@@ -26,7 +26,7 @@ img {
 	cursor: pointer;
 }
 body{
-        background-image: url("backSite.gif");
+        
         background-repeat: no-repeat; 
         background-size: cover;
         height: 100vh;
@@ -35,6 +35,15 @@ body{
 		overflow: hidden;
 	
 }
+
+video {
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index: -1;
+	width:100%;
+  }
+
 h1{
 	font-family: 'Tilt Warp', cursive;
 	color:#F6058B;
