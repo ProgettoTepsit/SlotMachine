@@ -52,9 +52,10 @@ h1{
 
 
 #mioBottone{
-	align-items: center;
-    margin-left: 45%;
-    margin-top:  40%;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
     background-color:#F6058B;
 	font-size: 60px;
 	color: white;
