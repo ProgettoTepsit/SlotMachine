@@ -20,3 +20,9 @@ function spin(reel) {
     reel.style.transform = 'translateY(0)';
   }, {once: true});
 }
+
+
+function game(){
+
+  window.location.href = "4444444444.html";
+}
