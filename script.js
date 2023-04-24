@@ -86,3 +86,6 @@ function testWin(){
 function randomInt(min, max){
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
+function game(){
+  window.location.href = "4444444444.html";
+}
