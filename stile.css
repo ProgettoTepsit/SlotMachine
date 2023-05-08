@@ -50,11 +50,13 @@ video {
 	text-align: center;
 	font-size: 101px;
 }
-h2{
+#t{
 	font-family: 'Tilt Warp', cursive;
 	color:#3df605;
 	text-align: center;
 	font-size: 101px;
+	
+
 }
 
 #preHome{
@@ -179,8 +181,25 @@ section#info{
 	width: 150px;
 	height: 150px;
 }
-.a4{
-	background-image: url("ciliegia.png");
-	width: 150px;
-	height: 150px;
-}
+.winner-message {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 10px;
+	background-color:#F6058B;
+
+	width: 700px;
+	border-radius: 10px;
+	display: none;
+	z-index: 9999;
+	
+  }
+  
+  .winner-message h1 {
+	font-size: 101px;
+	font-weight: bold;
+	color: #3df605;
+	text-align: center;
+  }

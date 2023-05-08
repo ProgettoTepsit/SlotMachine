@@ -6,11 +6,11 @@ var info = true;
 function doSlot(){
 	if (doing){return null;}
 	doing = true;
-	var numChanges = randomInt(1,5)*3
-	var numeberSlot1 = numChanges+randomInt(1,5)
-	var numeberSlot2 = numChanges+2*7+randomInt(1,5)
-	var numeberSlot3 = numChanges+4*7+randomInt(1,5)
-
+	var numChanges = randomInt(1,3)*3
+	var numeberSlot1 = numChanges+randomInt(1,3)
+	var numeberSlot2 = numChanges+2*7+randomInt(1,3)
+	var numeberSlot3 = numChanges+4*7+randomInt(1,3)
+	$('.winner-message').fadeOut();
 	var i1 = 0;
 	var i2 = 0;
 	var i3 = 0;
@@ -26,7 +26,7 @@ function doSlot(){
 			return null;
 		}
 		slotTile = document.getElementById("slot1");
-		if (slotTile.className=="a4"){
+		if (slotTile.className=="a3"){
 			slotTile.className = "a0";
 		}
 		slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
@@ -40,7 +40,7 @@ function doSlot(){
 			return null;
 		}
 		slotTile = document.getElementById("slot2");
-		if (slotTile.className=="a4"){
+		if (slotTile.className=="a3"){
 			slotTile.className = "a0";
 		}
 		slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
@@ -53,7 +53,7 @@ function doSlot(){
 			return null;
 		}
 		slotTile = document.getElementById("slot3");
-		if (slotTile.className=="a4"){
+		if (slotTile.className=="a3"){
 			slotTile.className = "a0";
 		}
 		slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
@@ -65,18 +65,10 @@ function testWin(){
 	var slot2 = document.getElementById("slot2").className
 	var slot3 = document.getElementById("slot3").className
 
-	if (((slot1 == slot2 && slot2 == slot3) ||
-		(slot1 == slot2 && slot3 == "a7") ||
-		(slot1 == slot3 && slot2 == "a7") ||
-		(slot2 == slot3 && slot1 == "a7") ||
-		(slot1 == slot2 && slot1 == "a7") ||
-		(slot1 == slot3 && slot1 == "a7") ||
-		(slot2 == slot3 && slot2 == "a7") ) && !(slot1 == slot2 && slot2 == slot3 && slot1=="a7")){
-		status.innerHTML = "YOU WIN!";
-		win.play();
-	}else{
+	if((slot1 == slot2 && slot2 == slot3))
+	{
+		$('.winner-message').fadeIn();
 		
-		lose.play();
 	}
 	doing = false;
 }
