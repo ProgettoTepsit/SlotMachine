@@ -24,13 +24,22 @@
 		<div id="slot1" class="a1" ></div>
 		<div id="slot2" class="a1"></div>
 		<div id="slot3" class="a1"></div>
-	</section>
-		
+	</section>	
+	<p id="sel">Puntata:</p>
+	<select id="puntata-select" onchange="selectPuntata(this.value)">
+		<option value="10" selected>10</option>
+		<option value="50" >50</option>
+		<option value="100">100</option>
+		<option value="250">250</option>
+		<option value="500">500</option>
+	</select>
+	<p id="sal">Saldo: <span id="saldo">500</span></p><img src="cipolla.png" id="cip"></img>
 </div>	
 	<div class="winner-message">
 		<h1> HAI VINTO! </h1>
 	  </div>
-	  
+	</div>
+
 
 	<button onclick="doSlot()" id="Gira">SPIN</button>
 

@@ -1,15 +1,33 @@
 var doing = false;
+var puntata = 10; // Puntata predefinita
 
+var saldo = 500;
 let status = document.getElementById("status")
 var info = true;
-
+	function selectPuntata(value) {
+		 puntata = parseInt(value);
+	}
 function doSlot(){
 	if (doing){return null;}
+
+	
+	if (saldo < puntata) {
+		alert("Saldo insufficiente. Aggiungi credito per continuare.");
+		return null;
+	}
 	doing = true;
 	var numChanges = randomInt(1,3)*3
 	var numeberSlot1 = numChanges+randomInt(1,3)
 	var numeberSlot2 = numChanges+2*7+randomInt(1,3)
 	var numeberSlot3 = numChanges+4*7+randomInt(1,3)
+	
+
+
+
+	// Riduci il saldo della puntata
+	saldo -= puntata;
+	document.getElementById("saldo").textContent = saldo;
+
 	$('.winner-message').fadeOut();
 	var i1 = 0;
 	var i2 = 0;
@@ -60,18 +78,24 @@ function doSlot(){
 	}	
 }
 
-function testWin(){
-	var slot1 = document.getElementById("slot1").className
-	var slot2 = document.getElementById("slot2").className
-	var slot3 = document.getElementById("slot3").className
+function testWin() {
+	var slot1 = document.getElementById("slot1").className;
+	var slot2 = document.getElementById("slot2").className;
+	var slot3 = document.getElementById("slot3").className;
 
-	if((slot1 == slot2 && slot2 == slot3))
+	if(slot1=="a1" && slot2=="a1" && slot3=="a1")
 	{
 		$('.winner-message').fadeIn();
-		
+		saldo += puntata * 30; 
 	}
+	else if (slot1 == slot2 && slot2 == slot3) {
+		$('.winner-message').fadeIn();
+		saldo += puntata * 5; // Aumenta il saldo in caso di vittoria
+	}
+	
 	doing = false;
 }
+
 
 
 
