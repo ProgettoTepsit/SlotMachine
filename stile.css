@@ -109,7 +109,7 @@ section#Slots{
 button#Gira{
 
 	padding-top: 15px;
-	border-radius: 5px;
+	border-radius: 15px;
 	margin: auto;
 	text-align: center;
 	background-color:#F6058B;
@@ -190,19 +190,20 @@ section#info{
 	padding-right: 20px;
 
 }
+
 .winner-message {
+	
+
 	position: absolute;
-	top: 150px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
+	top: 30%;
+	left: 1350px;
+	
+	background-color: #d02d87;
 	padding: 10px;
-	background-color:#F6058B;
-
-	width: 700px;
-	border-radius: 10px;
+	border-radius: 5px;
 	display: none;
-
+	 
+	
 	
   }
   
