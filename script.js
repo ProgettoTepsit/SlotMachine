@@ -103,5 +103,5 @@ function randomInt(min, max){
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
 function game(){
-  window.location.href = "index.html";
+  window.location.href = "game.html";
 }
