@@ -2,7 +2,7 @@ var doing = false;
 var puntata = 10; // Puntata predefinita
 
 var saldo = 500;
-let status = document.getElementById("status")
+
 var info = true;
 	function selectPuntata(value) {
 		 puntata = parseInt(value);
@@ -103,5 +103,5 @@ function randomInt(min, max){
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
 function game(){
-  window.location.href = "4444444444.html";
+  window.location.href = "index.html";
 }
