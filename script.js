@@ -1,14 +1,13 @@
 var doing = false;
 var puntata = 10; // Puntata predefinita
-
 var saldo = 500;
-let status = document.getElementById("status")
+
 var info = true;
 	function selectPuntata(value) {
 		 puntata = parseInt(value);
 	}
 function doSlot(){
-	if (doing){return null;}
+	if (doing){return null;} //serve per far spinnare volta per volta
 
 	
 	if (saldo < puntata) {
@@ -16,23 +15,24 @@ function doSlot(){
 		return null;
 	}
 	doing = true;
-	var numChanges = randomInt(1,3)*3
-	var numeberSlot1 = numChanges+randomInt(1,3)
-	var numeberSlot2 = numChanges+2*7+randomInt(1,3)
-	var numeberSlot3 = numChanges+4*7+randomInt(1,3)
+
 	
+	var numChanges = randomInt(1,3)*3 // serve per l'animazione del rullo
+	var numeberSlot1 = numChanges+randomInt(1,3)
+	var numeberSlot2 = numChanges+2*3+randomInt(1,3) //2*3 perchè il doppio dei girìi
+	var numeberSlot3 = numChanges+4*3+randomInt(1,3)
+	//riscriviamo randomInt altrimenti sarebbero sempre uguali
 
 
 
 	// Riduci il saldo della puntata
 	saldo -= puntata;
-	document.getElementById("saldo").textContent = saldo;
-
+	document.getElementById("saldo").textContent = saldo; //cambia il valore del saldo
 	$('.winner-message').fadeOut();
 	var i1 = 0;
 	var i2 = 0;
 	var i3 = 0;
-	var sound = 0
+	
 
 	slot1 = setInterval(spin1, 50);
 	slot2 = setInterval(spin2, 50);
@@ -45,9 +45,9 @@ function doSlot(){
 		}
 		slotTile = document.getElementById("slot1");
 		if (slotTile.className=="a3"){
-			slotTile.className = "a0";
+			slotTile.className = "a0"; //serve per scorrere il rullo
 		}
-		slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
+		slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1) // assegna l'immagine finale
 	}
 
 
@@ -104,5 +104,5 @@ function randomInt(min, max){
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
 function game(){
-  window.location.href = "4444444444.html";
+  window.location.href = "gam.html";
 }
