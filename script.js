@@ -87,6 +87,7 @@ function testWin() {
 	{
 		$('.winner-message').fadeIn();
 		saldo += puntata * 30; 
+		
 	}
 	else if (slot1 == slot2 && slot2 == slot3) {
 		$('.winner-message').fadeIn();
